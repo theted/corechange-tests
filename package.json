@@ -1,0 +1,22 @@
+{
+  "name": "corechange-tests",
+  "version": "1.0.0",
+  "description": "CoreChange code tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theted/corechange-tests.git"
+  },
+  "author": "Fredrik Sundberg <ted.sundberg@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/theted/corechange-tests/issues"
+  },
+  "homepage": "https://github.com/theted/corechange-tests#readme",
+  "devDependencies": {
+    "vitest": "^1.4.0"
+  }
+}
