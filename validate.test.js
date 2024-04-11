@@ -9,12 +9,11 @@ test("validation function", () => {
     _javascript: false,
     javascript3: true,
     javascript_3: true,
+    baz: false,
+    iamareallylongstringimeanareallylongstring: false,
   };
 
-  expect(validate("javascript")).toEqual(expected.javascript);
-
   Object.entries(expected).forEach(([key, value]) => {
-    console.log(key, value, validate(key));
     expect(validate(key)).toEqual(value);
   });
 });
