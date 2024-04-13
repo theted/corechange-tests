@@ -20,12 +20,13 @@ export function find2(index) {
 
 // optimization 2: use a factory function to avoid recreating the array every time the function is called
 export function createFind() {
-  let a = [];
+  const a = new Array(ARR_LENGTH);
+
   for (let i = 0; i < ARR_LENGTH; i++) {
     a[i] = i * i;
   }
 
-  return function find(index) {
+  return function (index) {
     return a[index];
   };
 }
